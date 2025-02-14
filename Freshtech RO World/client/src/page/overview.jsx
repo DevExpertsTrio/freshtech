@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../components/productCard";
+import ProductCard from "../components/product/productCard";
 import "../assets/css/overview.css";
 import { fetchProducts } from "../actions/products";
 

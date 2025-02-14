@@ -10,8 +10,7 @@ const initialState = {
 export default ( state = initialState , action ) => {
     switch (action.type ){
         case AUTH:
-            console.log('action:', action);
-            localStorage.setItem('user', JSON.stringify({ ...action?.data }));
+            localStorage.setItem('user', JSON.stringify({ ...action?.data.user }));
             return { ...state, user: action?.data.user, isAuthenticated : true };
         default:
             return state;
